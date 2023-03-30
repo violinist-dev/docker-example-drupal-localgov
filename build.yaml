@@ -16,6 +16,9 @@ php:
   phpstan:
     level: max
 
+drupal:
+  docroot: web
+
 docker-compose:
   services:
     database: ~
