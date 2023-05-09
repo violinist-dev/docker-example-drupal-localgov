@@ -28,7 +28,7 @@ x-app: &default-app
   tty: true
 
 services:
-  
+
   php:
     <<: *default-app
     build:
