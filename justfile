@@ -20,6 +20,9 @@ alias phpunit := test
 test *args:
   just _exec php phpunit --colors=always {{ args }}
 
+test-watch *args:
+  nodemon --ext "*" --watch "." --exec "just test  || exit 1" --ignore */sites/simpletest
+
 drush *args:
   just _exec php drush {{ args }}
 
@@ -31,7 +34,7 @@ install *args:
 
 
 _exec +args:
-  docker compose exec {{ args }}
+  docker compose exec -T {{ args }}
 
 _run service command *args:
   docker compose run \
