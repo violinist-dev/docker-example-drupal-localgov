@@ -30,7 +30,7 @@ x-app: &default-app
 services:
 
   php:
-    <<: *default-app
+    <<: [, *default-app]
     build:
       context: .
       target: build
