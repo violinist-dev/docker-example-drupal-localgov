@@ -9,7 +9,7 @@
 
           <rule ref="DrupalPractice"/>
     
-    <rule ref="Drupal">
+  <rule ref="Drupal">
     <exclude name="Drupal.Commenting.ClassComment.Missing"/>
     <exclude name="Drupal.Commenting.DataTypeNamespace.DataTypeNamespace"/>
     <exclude name="Drupal.Commenting.Deprecated"/>
@@ -28,4 +28,4 @@
     <exclude name="Drupal.NamingConventions.ValidFunctionName.ScopeNotCamelCaps"/>
     <exclude name="DrupalPractice.Objects.StrictSchemaDisabled.StrictConfigSchema"/>
   </rule>
-  </ruleset>
+</ruleset>

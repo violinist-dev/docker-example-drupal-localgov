@@ -6,4 +6,4 @@ parameters:
     - *Test.php
     - *TestBase.php
   paths:
-    - src
+    
