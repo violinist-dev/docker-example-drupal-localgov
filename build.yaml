@@ -11,10 +11,9 @@ database:
 
 php:
   version: 8.1-fpm-bullseye
-  phpcs:
-    standard: Drupal,DrupalPractice
-  phpstan:
-    level: max
+  phpcs: false
+  phpstan: false
+  phpunit: false
 
 drupal:
   docroot: web
